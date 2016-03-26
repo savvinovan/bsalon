@@ -1,0 +1,20 @@
+body{
+	background: #e6ebe0;
+}
+.master_forms{
+	padding-top: 100px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	color: #20172A;
+	font-family: Roboto; 
+}
+.forms_text {
+	width: 80%;
+	border-radius: 8px 8px 8px 8px;
+	height: 30px;
+	padding: 5px; 
+}
+.master_forms input{
+	margin-top: 10px;
+}
