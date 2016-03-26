@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <!--<link rel="stylesheet" href="css/style.css">-->
         <link rel="stylesheet" href="css/index.css">
         <title>Сервис онлайн записи в салоны</title>
@@ -27,9 +28,33 @@
                 <h1 class="main-page-title__h1">Сервис онлайн регистрации в салоны красоты</h1>
             </div>
         </div>
-        <div class="section2__div">
+        <div class="container">
+            <div class="section2__div col-md-12">
+                <div class="section2-filter__div col-md-4">
+                    <h1 class="filter-title__h1">Фильтры</h1>
+                    <div class="filter-sex__div">
+                        <p class="filter-sex-title__p">Пол:</p>
+                        <label class="filter-sex-label__label" for="">М:</label>
+                        <input type="radio" name="sex" value="male">
+                        <label class="filter-sex-label__label" for="">Ж:</label>
+                        <input type="radio" name="sex" value="female">
+                    </div>
 
+                </div>
+                <div class="section2-barbers__div col-md-8">
+                    <h1 class="barbers-title__h1">Парикмахеры</h1>
+                    <div class="barber-container__div">
+                        <p class="barber-title__p">
+                            Иванов Иван Иванович
+                        </p>
+                        <p class="barber-desc__p">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quisquam ab dolorum dicta quibusdam quasi!
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
 
         <!--[if lt IE 8]>
@@ -54,11 +79,10 @@
         </script>
         <script>
             jQuery.scrollSpeed(100, 800);
-
             var controller = new ScrollMagic.Controller();
             // ############## PARALLAX 1 #####################
             new ScrollMagic.Scene({triggerElement: ".section1_div", duration: "100%"})
-            .setTween(".section1-bg__img", {y: "80%", ease: Linear.easeNone})
+            .setTween(".section1-bg__img", {y: "60%", ease: Linear.easeNone})
             .addIndicators()
             .addTo(controller);
         </script>
