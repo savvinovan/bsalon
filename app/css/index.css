@@ -2,11 +2,15 @@ body {
   backgrond: #e6ebe0;
 }
 .title__h1 {
-  font-size: 7em;
+  font-size: 10em;
   font-family: "Roboto";
   font-weight: 700;
   color: $font_c;
   z-index: 10;
+  margin: 0;
+  padding: 0;
+  margin-top: 10vh;
+  text-shadow: 1px 4px 5px #333;
 }
 .main-page-title__h1 {
   font-family: "PT Sans";
@@ -14,6 +18,10 @@ body {
   font-style: italic;
   color: #e6ebe0;
   z-index: 10;
+  margin: 0;
+  padding: 0;
+  margin-top: 5vh;
+  text-shadow: 1px 4px 5px #333;
 }
 .center-text__div {
   display: table;
@@ -40,11 +48,22 @@ body {
   width: 100%;
   height: 60vh;
   position: absolute;
-  opacity: 0.4;
-  background: #333;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0, rgba(0,0,0,0.4) 100%);
   z-index: 1;
 }
 .section2__div {
   height: 200vh;
-  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+.section2-filter__div {
+  background: #fff;
+}
+.filter-title__h1 {
+  font-family: "Roboto";
+  font-size: 2em;
+}
+.barbers-title__h1 {
+  font-family: "Roboto";
+  font-size: 2em;
 }
